@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+#right::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-track {
+  width: max-content;
+  animation: autoScroll 20s linear infinite;
+}
+
+@keyframes autoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
