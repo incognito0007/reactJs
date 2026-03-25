@@ -5,15 +5,20 @@
 }
 
 .scroll-track {
-  width: max-content;
-  animation: autoScroll 20s linear infinite;
+  animation: premiumScroll 40s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 }
 
-@keyframes autoScroll {
-  from {
+@keyframes premiumScroll {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-track {
+    animation-duration: 60s;
   }
 }

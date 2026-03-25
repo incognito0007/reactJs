@@ -5,7 +5,7 @@ const RightContent = (props) => {
     return (
         <div
             id='right'
-            className='h-full flex flex-nowrap gap-10 overflow-hidden rounded-4xl w-2/3 p-6'
+            className='w-full lg:w-2/3 flex flex-nowrap gap-6 lg:gap-10 overflow-hidden rounded-4xl p-4 lg:p-6'
         >
             <div className="scroll-track flex flex-nowrap gap-10">
 
